@@ -1,5 +1,28 @@
 <!DOCTYPE html>
 <html lang="ja">
+<style>
+  body { font-family: "Noto Sans JP", sans-serif; margin: 0; background: #f6f7fb; }
+  .page { max-width: 960px; margin: 32px auto; padding: 0 16px; }
+  .hero-card, .details-card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,.08); }
+  .hero-card { position: relative; padding: 24px; min-height: 220px; margin-bottom: 20px; }
+  .hero__image { position: absolute; inset: 0; background: linear-gradient(120deg, #6aa6ff, #b58bff); }
+  .hero__overlay { position: absolute; inset: 0; background: rgba(0,0,0,.25); }
+  .hero__content { position: relative; color: #fff; max-width: 520px; }
+  .pill { display: inline-block; padding: 6px 10px; border-radius: 999px; background: rgba(255,255,255,.2); }
+  h1 { margin: 12px 0 8px; font-size: 28px; }
+  p { margin: 0; line-height: 1.6; }
+  .details-card { padding: 20px; }
+  .details__header { display:flex; gap:16px; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; }
+  .cta { display:inline-block; padding:10px 14px; border-radius: 12px; background:#2b5cff; color:#fff; text-decoration:none; }
+  .info-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:12px; margin-top:16px; }
+  .info-card { border:1px solid #e6e8f0; border-radius:14px; padding:14px; display:flex; gap:12px; }
+  .icon { font-size:20px; }
+  .label { color:#6b7280; font-size:12px; margin-bottom:4px; }
+  .value { font-weight:700; }
+  .note { color:#6b7280; font-size:12px; margin-top:6px; }
+  .eyebrow { letter-spacing:.08em; text-transform:uppercase; color:#6b7280; font-size:12px; margin:0; }
+  .lead { margin-top:8px; color:#374151; }
+</style>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
